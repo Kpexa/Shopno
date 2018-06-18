@@ -1,0 +1,324 @@
+.page-subcaption {
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 18px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: #5e5f5f;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.caption-article {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #3e3f3f;
+}
+
+.text-article {
+  font-family: Raleway;
+  font-size: 16px;
+  color: #404141;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* =============== HEADER =============== */
+
+.main-header {
+  max-width: 100%;
+  background-color: rgba(239, 240, 242, 0.99);
+}
+
+.header {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.menu .logo:hover {
+  cursor: pointer;
+}
+
+.menu .burger {
+  align-self: center;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu .burger:hover {
+  cursor: pointer;
+}
+
+.caption-container {
+  margin: 13% auto 0;
+  padding: 0 15%;
+}
+
+.caption-container .caption {
+  font-family: Montserrat;
+  color: #505050;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 550;
+  line-height: 28px;
+  letter-spacing: 3px;
+  line-height: 1.4;
+  text-align: center;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+}
+
+.caption-container .caption span {
+  background-color: #b3f2ef;
+  padding: 0 1%;
+}
+
+.btn {
+  display: flex;
+}
+
+.btn .contact-us {
+  background-color: #eff0f2;
+  color: black;
+  border: 2px solid #7f8081;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: box-shadow 0.5s, background-color 1s;
+  margin: 8% auto 10%;
+}
+
+.btn .contact-us:hover {
+  background-color: #76f4ea;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+}
+
+.glass {
+  position: absolute;
+  top: 75%;
+  left: 80%;
+}
+
+/* =============== ABOUT US =============== */
+
+.main-about-us {
+  max-width: 100%;
+  background-color: #f8fafa;
+}
+
+.page-caption {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2.28px;
+  text-transform: uppercase;
+  color: #181818;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8%;
+}
+
+.page-subcaption {
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 18px;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: #5e5f5f;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.content-about-us {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* =============== FEATURED WORKS =============== */
+
+/* =============== SERVICES =============== */
+
+/* =============== TEAM =============== */
+
+/* =============== WHAT THEY SAYS =============== */
+
+/* =============== BRANDS =============== */
+
+/* =============== CONTACTS =============== */
+
+/* =============== FOOTER =============== */
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu .burger {
+    margin-right: 50px;
+  }
+
+  .caption-container .caption {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    padding-top: 2%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .btn .contact-us {
+    margin: 15% auto 10%;
+  }
+
+  .glass {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu .burger {
+    margin-right: 20px;
+  }
+
+  .caption-container .caption {
+    font-size: 25px;
+  }
+
+  .btn .contact-us {
+    font-size: 10px;
+  }
+}

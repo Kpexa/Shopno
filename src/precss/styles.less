@@ -1,0 +1,163 @@
+@import "smart-grid.less";
+@import "vars.less";
+
+.reset();
+
+.wrapper{
+	.wrapper();
+}
+
+/* =============== HEADER =============== */
+
+.main-header {
+	max-width: 100%; 
+	background-color:  rgba(239, 240, 242, 0.99);
+}
+
+.header {
+	position: relative;
+}
+
+.menu {
+	.flex();
+	justify-content: space-between;
+	padding-top: 5%;
+	.to(900px, {
+		padding-top: 2%;
+	});
+
+	.logo:hover{
+		cursor: pointer;		
+	}
+	
+	.burger {
+		align-self: center;
+		font-size: 28px;
+		color: rgba(0, 0, 0, 0.6);
+		.to(992px, {
+			margin-right: 50px;
+		});
+		.to(576px, {
+			margin-right: 20px; 
+		});
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+
+.caption-container {
+	margin: 13% auto 0;
+	padding: 0 15%;	
+
+	.caption{
+		font-family: Montserrat;
+		color:  #505050;
+		text-transform: uppercase;
+		font-size: 45px;
+		font-weight: 550;
+		line-height: 28px;
+		letter-spacing: 3px;
+		line-height: 1.4;
+		text-align: center;
+		text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+		.to(992px, {
+			font-size: 35px; 
+		});
+		.to(576px, {
+			font-size: 25px; 
+		});
+		
+
+		span {
+			background-color: rgb(179, 242, 239);
+			padding: 0 1%;
+		}
+	}	
+}
+
+.btn {
+	display: flex;
+
+	.contact-us {		
+		background-color: #eff0f2;
+		color: black;
+		border: 2px solid #7f8081;
+		font-family:'Montserrat';
+		font-weight: 100;
+		font-size: 15px;
+		  letter-spacing: 2.16px;
+		text-transform: uppercase;
+		padding: 10px 20px; 
+		cursor: pointer;    
+		transition: box-shadow 0.5s, background-color 1s;
+		margin: 8% auto 10%;
+		.to(720px, {
+			margin: 15% auto 10%;
+		});
+		.to(576px, {
+			font-size: 10px; 
+		});	
+		
+		&:hover {
+			background-color: rgb(118, 244, 234, 0.5);
+			box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+		}
+	}
+}
+
+.glass {
+	position: absolute;
+	top: 75%;
+	left: 80%;
+	.to(720px, {
+		display: none;		
+	});	
+}
+
+/* =============== ABOUT US =============== */
+
+.main-about-us {
+	max-width: 100%;
+	background-color:  #f8fafa;
+}
+
+.page-caption {
+	.page-caption();
+}
+
+.page-subcaption {
+	.page-subcaption();
+}
+
+.content-about-us {
+	.flex();
+}
+
+/* =============== FEATURED WORKS =============== */
+
+
+
+/* =============== SERVICES =============== */
+
+
+
+/* =============== TEAM =============== */
+
+
+
+/* =============== WHAT THEY SAYS =============== */
+
+
+
+/* =============== BRANDS =============== */
+
+
+
+/* =============== CONTACTS =============== */
+
+
+
+/* =============== FOOTER =============== */
+
