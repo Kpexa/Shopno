@@ -109,7 +109,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -294,6 +294,30 @@ img {
 
 /* =============== FEATURED WORKS =============== */
 
+.main-featured-works {
+  max-width: 100%;
+}
+
+.works-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  justify-content: center;
+  margin-top: 9%;
+  margin-bottom: 5%;
+}
+
+.works-items .works-item {
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(33.333333333333336% - 15px);
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 /* =============== SERVICES =============== */
 
 /* =============== TEAM =============== */
@@ -333,6 +357,10 @@ img {
   .caption-container .caption {
     font-size: 35px;
   }
+
+  .works-items .works-item {
+    width: calc(33.333333333333336% - 15px);
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -349,11 +377,37 @@ img {
   .glass {
     display: none;
   }
+
+  .page-caption {
+    font-size: 23px;
+  }
+
+  .page-subcaption {
+    font-size: 15px;
+  }
+
+  .article-about-us .caption-article {
+    font-size: 16px;
+  }
+
+  .article-about-us .text-article {
+    font-size: 13px;
+  }
+
+  .works-items .works-item {
+    width: calc(50% - 15px);
+  }
 }
 
 @media screen and (max-width: 690px) {
   .content-about-us {
     padding: 0 50px 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .article-about-us h6 {
+    font-size: 14px;
   }
 }
 
@@ -365,17 +419,13 @@ img {
   .btn .contact-us {
     font-size: 10px;
   }
+
+  .works-items .works-item {
+    width: calc(100% - 15px);
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .page-caption {
-    font-size: 23px;
-  }
-
-  .page-subcaption {
-    font-size: 15px;
-  }
-
   .content-about-us {
     padding: 0 20px 30px;
   }

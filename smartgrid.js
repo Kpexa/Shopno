@@ -3,5 +3,5 @@ module.exports = {
     container: {
         maxWidth: "1140px",
         fields: "30px"
-    },
+    }    
 };

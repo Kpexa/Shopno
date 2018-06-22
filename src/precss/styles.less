@@ -37,13 +37,6 @@
 		align-self: center;
 		font-size: 28px;
 		color: rgba(0, 0, 0, 0.6);
-		// .to(992px, {
-		// 	margin-right: 50px;
-		// });
-		// .to(576px, {
-		// 	margin-right: 20px; 
-		// });
-
 		&:hover{
 			cursor: pointer;
 		}
@@ -127,17 +120,11 @@
 }
 
 .page-caption {
-	.page-caption();
-	.to(420px, {
-		font-size: 23px;
-	});
+	.page-caption();	
 }
 
 .page-subcaption {
-	.page-subcaption();
-	.to(420px, {
-		font-size: 15px;
-	});
+	.page-subcaption();	
 }
 
 .content-about-us {
@@ -183,7 +170,7 @@
 		.caption-article();
 		.to(1140px, {
 			text-align: center;
-		});
+		});		
 	}
 
 	.text-article {
@@ -199,6 +186,9 @@
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
 		color: #3e3f3f;
+		.to(650px, {
+			font-size: 14px;
+		});
 		.to(1140px, {
 			text-align: center;
 		});
@@ -208,6 +198,27 @@
 
 /* =============== FEATURED WORKS =============== */
 
+.main-featured-works {
+	max-width: 100%;	
+}
+
+.works-items {
+	.row-flex();
+	justify-content: center;
+	margin-top: 9%;
+	margin-bottom: 5%;
+
+	.works-item {
+		.col();
+		.size(4);
+		.size-md(4);
+		.size-sm(6);
+		.size-xs(12);
+		box-sizing: border-box;		
+		margin-bottom: 15px;
+		text-align: center;				
+	}
+}
 
 
 /* =============== SERVICES =============== */
