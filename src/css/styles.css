@@ -320,6 +320,11 @@ img {
 
 /* =============== SERVICES =============== */
 
+.main-services {
+  max-width: 100%;
+  background-color: #f9fbfb;
+}
+
 /* =============== TEAM =============== */
 
 /* =============== WHAT THEY SAYS =============== */
