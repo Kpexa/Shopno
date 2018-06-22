@@ -1,31 +1,3 @@
-.page-subcaption {
-  text-align: center;
-  font-family: Merriweather;
-  font-size: 18px;
-  letter-spacing: 1.08px;
-  text-transform: uppercase;
-  color: #5e5f5f;
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.caption-article {
-  font-family: Merriweather;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: #3e3f3f;
-}
-
-.text-article {
-  font-family: Raleway;
-  font-size: 16px;
-  color: #404141;
-  letter-spacing: 0.8px;
-  line-height: 28px;
-}
-
 body,
 div,
 dl,
@@ -166,6 +138,9 @@ img {
 }
 
 .menu .burger {
+  position: fixed;
+  right: 10%;
+  z-index: 100;
   align-self: center;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.6);
@@ -262,6 +237,59 @@ img {
 .content-about-us {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 9%;
+  padding: 0 100px 70px;
+}
+
+.image-about-us {
+  margin: 0 auto;
+}
+
+.image-about-us .navigation-dots-about-us {
+  margin: 30px 0;
+  text-align: center;
+  color: #d0d0d0;
+  font-size: 15px;
+}
+
+.image-about-us .fa-circle:hover {
+  cursor: pointer;
+}
+
+.article-about-us {
+  flex-basis: 380px;
+  flex-grow: 1;
+  margin-left: 100px;
+}
+
+.article-about-us .caption-article {
+  margin-bottom: 20px;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #3e3f3f;
+}
+
+.article-about-us .text-article {
+  font-family: Raleway;
+  font-size: 16px;
+  color: #404141;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.article-about-us h6 {
+  margin-bottom: 20px;
+  font-family: Merriweather;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #3e3f3f;
 }
 
 /* =============== FEATURED WORKS =============== */
@@ -278,14 +306,28 @@ img {
 
 /* =============== FOOTER =============== */
 
+@media screen and (max-width: 1140px) {
+  .content-about-us {
+    flex-direction: column;
+  }
+
+  .article-about-us {
+    margin-left: 0;
+  }
+
+  .article-about-us .caption-article {
+    text-align: center;
+  }
+
+  .article-about-us h6 {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .menu .burger {
-    margin-right: 50px;
   }
 
   .caption-container .caption {
@@ -309,16 +351,32 @@ img {
   }
 }
 
-@media screen and (max-width: 576px) {
-  .menu .burger {
-    margin-right: 20px;
+@media screen and (max-width: 690px) {
+  .content-about-us {
+    padding: 0 50px 50px;
   }
+}
 
+@media screen and (max-width: 576px) {
   .caption-container .caption {
     font-size: 25px;
   }
 
   .btn .contact-us {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-caption {
+    font-size: 23px;
+  }
+
+  .page-subcaption {
+    font-size: 15px;
+  }
+
+  .content-about-us {
+    padding: 0 20px 30px;
   }
 }

@@ -31,15 +31,18 @@
 	}
 	
 	.burger {
+		position: fixed;
+		right: 10%;
+		z-index: 100;
 		align-self: center;
 		font-size: 28px;
 		color: rgba(0, 0, 0, 0.6);
-		.to(992px, {
-			margin-right: 50px;
-		});
-		.to(576px, {
-			margin-right: 20px; 
-		});
+		// .to(992px, {
+		// 	margin-right: 50px;
+		// });
+		// .to(576px, {
+		// 	margin-right: 20px; 
+		// });
 
 		&:hover{
 			cursor: pointer;
@@ -125,14 +128,82 @@
 
 .page-caption {
 	.page-caption();
+	.to(420px, {
+		font-size: 23px;
+	});
 }
 
 .page-subcaption {
 	.page-subcaption();
+	.to(420px, {
+		font-size: 15px;
+	});
 }
 
 .content-about-us {
 	.flex();
+	box-sizing: border-box;	
+	margin-top: 9%;
+	padding: 0 100px 70px;
+	.to(1140px, {
+		flex-direction: column;
+	});
+	.to(690px, {
+		padding: 0 50px 50px;
+	});
+	.to(420px, {
+		padding: 0 20px 30px;
+	});	
+}
+
+.image-about-us {	
+	margin: 0 auto;
+	
+	.navigation-dots-about-us {
+		margin: 30px 0;
+		text-align: center;
+		color: #d0d0d0;
+		font-size: 15px;		
+	}
+
+	.fa-circle:hover {
+		cursor: pointer;
+	}
+}
+
+.article-about-us {		
+	flex-basis: 380px;
+	flex-grow: 1;	
+	margin-left: 100px;
+	.to(1140px, {
+		margin-left: 0;
+	});		
+
+	.caption-article {
+		.caption-article();
+		.to(1140px, {
+			text-align: center;
+		});
+	}
+
+	.text-article {
+		.text-article();
+		margin-bottom: 20px;
+	}
+
+	h6 {
+		margin-bottom: 20px;
+		font-family: Merriweather;
+		font-size: 17px;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		color: #3e3f3f;
+		.to(1140px, {
+			text-align: center;
+		});
+	}
+	
 }
 
 /* =============== FEATURED WORKS =============== */
