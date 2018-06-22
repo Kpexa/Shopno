@@ -325,6 +325,73 @@ img {
   background-color: #f9fbfb;
 }
 
+.services-items {
+  margin-top: 9%;
+  margin-bottom: 5%;
+}
+
+.items-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  justify-content: center;
+}
+
+.services-item-1 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(58.333333333333336% - 15px);
+  margin-bottom: 15px;
+}
+
+.services-item-2 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(41.66666666666667% - 15px);
+  margin-bottom: 15px;
+}
+
+.services-item-3 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(58.333333333333336% - 15px);
+  margin-bottom: 15px;
+}
+
+.services-item-4 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(41.66666666666667% - 15px);
+  margin-bottom: 15px;
+}
+
+.services-item-5 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(41.66666666666667% - 15px);
+  margin-bottom: 15px;
+}
+
+.services-item-6 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(58.333333333333336% - 15px);
+  margin-bottom: 15px;
+}
+
 /* =============== TEAM =============== */
 
 /* =============== WHAT THEY SAYS =============== */
