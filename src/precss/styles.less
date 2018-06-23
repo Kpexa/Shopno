@@ -261,7 +261,7 @@
 		});
 		.to(430px, {
 			font-size: 16px;
-		})
+		});
 	}
 
 	.content-item {
@@ -275,7 +275,7 @@
 		});
 		.to(430px, {
 			font-size: 13px;
-		})
+		});
 	}
 }
 
@@ -285,6 +285,10 @@
 	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
+
+	.services-img {
+		text-align: center;
+	}
 	
 	.caption-item {
 		margin: 25% 15% 5%;
@@ -429,7 +433,7 @@
 		});
 		.to(430px, {
 			font-size: 16px;
-		})
+		});
 	}	
 	
 	.content-item {
@@ -443,7 +447,7 @@
 		});
 		.to(430px, {
 			font-size: 13px;
-		})
+		});
 	}
 
 	.know-more {
@@ -458,15 +462,31 @@
 		});
 		.to(430px, {
 			font-size: 16px;
-		})
+		});
 	}
-}	
-
-
+}
 
 /* =============== TEAM =============== */
 
+.main-team {
+	max-width: 100%;	
+}
 
+.team-items {
+	.row-flex();
+	justify-content: center;
+	margin-top: 9%;
+	margin-bottom: 5%;
+}
+
+.team-item {
+	.col();
+	.size(4);
+	.size-sm(6);
+	.size-xs(12);	
+	margin-bottom: 15px;
+	text-align: center;
+}
 
 /* =============== WHAT THEY SAYS =============== */
 

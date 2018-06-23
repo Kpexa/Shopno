@@ -377,6 +377,10 @@ img {
   position: relative;
 }
 
+.services-item-2 .services-img {
+  text-align: center;
+}
+
 .services-item-2 .caption-item {
   margin: 25% 15% 5%;
 }
@@ -524,6 +528,30 @@ img {
 
 /* =============== TEAM =============== */
 
+.main-team {
+  max-width: 100%;
+}
+
+.team-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  justify-content: center;
+  margin-top: 9%;
+  margin-bottom: 5%;
+}
+
+.team-item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: calc(33.333333333333336% - 15px);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 /* =============== WHAT THEY SAYS =============== */
 
 /* =============== BRANDS =============== */
@@ -647,6 +675,10 @@ img {
   .services-item-6 {
     width: calc(100% - 15px);
   }
+
+  .team-item {
+    width: calc(50% - 15px);
+  }
 }
 
 @media screen and (max-width: 690px) {
@@ -671,6 +703,10 @@ img {
   }
 
   .works-items .works-item {
+    width: calc(100% - 15px);
+  }
+
+  .team-item {
     width: calc(100% - 15px);
   }
 }
