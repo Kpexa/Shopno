@@ -241,37 +241,198 @@
 	.col();
 	.size(7);
 	margin-bottom: 15px;
+	background-color:  rgba(109, 246, 235, 0.97);
+	padding: 4% 6%;
+
+	.caption-item {
+		margin-bottom: 20px;
+		font-family: Merriweather;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		color: #000000;
+		.to(850px, {
+			font-size: 16px;
+		});
+	}
+
+	.content-item {
+		font-family: Raleway;
+		font-size: 16px;
+		color: #000000;
+		letter-spacing: 0.8px;
+		line-height: 28px;
+		.to(850px, {
+			font-size: 13px;
+		});
+	}
 }
 
 .services-item-2 {
 	.col();
 	.size(5);
 	margin-bottom: 15px;
+	position: relative;
+	
+	.caption-item {
+		margin: 25% 15% 5%;
+		.to(900px, {
+			margin: 15% 15% 5%;
+		});
+	}
+
+	.content-item {
+		margin: 0 15%;
+	}
+
+	.know-more {
+		margin: 9% 3% 0 15%;
+	}
 }
 
 .services-item-3 {
 	.col();
 	.size(7);
 	margin-bottom: 15px;
+	position: relative;
+
+	.caption-item {
+		margin: 17% 15% 5%;
+		.to(900px, {
+			margin: 10% 15% 5%;
+		});
+	}
+
+	.content-item {
+		margin: 0 15%;
+	}
+
+	.know-more {
+		margin: 6% 2% 0 15%;
+	}
 }
 
 .services-item-4 {
 	.col();
 	.size(5);
 	margin-bottom: 15px;
+	position: relative;
+
+	.caption-item {
+		margin: 24% 15% 5%;
+		.to(900px, {
+			margin: 15% 15% 5%;
+		});
+	}
+
+	.content-item {
+		margin: 0 15%;
+	}
+
+	.know-more {
+		margin: 9% 3% 0 15%;
+	}
 }
 
 .services-item-5 {
 	.col();
 	.size(5);
 	margin-bottom: 15px;
+	position: relative;
+
+	.caption-item {
+		margin: 24% 15% 5%;
+		.to(900px, {
+			margin: 15% 15% 5%;
+		});
+	}
+
+	.content-item {
+		margin: 0 15%;
+	}
+
+	.know-more {
+		margin: 9% 3% 0 15%;
+	}
 }
 
 .services-item-6 {
 	.col();
 	.size(7);
 	margin-bottom: 15px;
+	position: relative;
+
+	.caption-item {
+		margin: 17% 15% 5%;
+		.to(900px, {
+			margin: 10% 15% 5%;
+		});
+	}
+
+	.content-item {
+		margin: 0 15%;
+	}
+
+	.know-more {
+		margin: 6% 2% 0 15%;
+	}
 }
+
+.opacity {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	transition: background-color 0.4s;	
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	
+	img {
+		cursor: pointer;
+	}
+	
+	.caption-item {		
+		font-family: Merriweather;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
+		color: #f9fbfb;
+		.to(850px, {
+			font-size: 16px;
+		});
+	}	
+	
+	.content-item {
+		font-family: Raleway;
+		font-size: 16px;
+		color: #f9fbfb;
+		letter-spacing: 0.8px;
+		line-height: 28px;
+		.to(850px, {
+			font-size: 13px;
+		});
+	}
+
+	.know-more {
+		font-family: Raleway;
+		font-size: 18px;
+		letter-spacing: 0.72px;
+		color: #f7f7f7;		
+		display: inline-block;
+		cursor: pointer;
+		.to(850px, {
+			font-size: 16px;
+		});
+	}
+}	
+
+
 
 /* =============== TEAM =============== */
 

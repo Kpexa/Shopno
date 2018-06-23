@@ -345,6 +345,26 @@ img {
   margin-right: 7.5px;
   width: calc(58.333333333333336% - 15px);
   margin-bottom: 15px;
+  background-color: rgba(109, 246, 235, 0.97);
+  padding: 4% 6%;
+}
+
+.services-item-1 .caption-item {
+  margin-bottom: 20px;
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-item-1 .content-item {
+  font-family: Raleway;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.8px;
+  line-height: 28px;
 }
 
 .services-item-2 {
@@ -354,6 +374,19 @@ img {
   margin-right: 7.5px;
   width: calc(41.66666666666667% - 15px);
   margin-bottom: 15px;
+  position: relative;
+}
+
+.services-item-2 .caption-item {
+  margin: 25% 15% 5%;
+}
+
+.services-item-2 .content-item {
+  margin: 0 15%;
+}
+
+.services-item-2 .know-more {
+  margin: 9% 3% 0 15%;
 }
 
 .services-item-3 {
@@ -363,6 +396,19 @@ img {
   margin-right: 7.5px;
   width: calc(58.333333333333336% - 15px);
   margin-bottom: 15px;
+  position: relative;
+}
+
+.services-item-3 .caption-item {
+  margin: 17% 15% 5%;
+}
+
+.services-item-3 .content-item {
+  margin: 0 15%;
+}
+
+.services-item-3 .know-more {
+  margin: 6% 2% 0 15%;
 }
 
 .services-item-4 {
@@ -372,6 +418,19 @@ img {
   margin-right: 7.5px;
   width: calc(41.66666666666667% - 15px);
   margin-bottom: 15px;
+  position: relative;
+}
+
+.services-item-4 .caption-item {
+  margin: 24% 15% 5%;
+}
+
+.services-item-4 .content-item {
+  margin: 0 15%;
+}
+
+.services-item-4 .know-more {
+  margin: 9% 3% 0 15%;
 }
 
 .services-item-5 {
@@ -381,6 +440,19 @@ img {
   margin-right: 7.5px;
   width: calc(41.66666666666667% - 15px);
   margin-bottom: 15px;
+  position: relative;
+}
+
+.services-item-5 .caption-item {
+  margin: 24% 15% 5%;
+}
+
+.services-item-5 .content-item {
+  margin: 0 15%;
+}
+
+.services-item-5 .know-more {
+  margin: 9% 3% 0 15%;
 }
 
 .services-item-6 {
@@ -390,6 +462,64 @@ img {
   margin-right: 7.5px;
   width: calc(58.333333333333336% - 15px);
   margin-bottom: 15px;
+  position: relative;
+}
+
+.services-item-6 .caption-item {
+  margin: 17% 15% 5%;
+}
+
+.services-item-6 .content-item {
+  margin: 0 15%;
+}
+
+.services-item-6 .know-more {
+  margin: 6% 2% 0 15%;
+}
+
+.opacity {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  transition: background-color 0.4s;
+}
+
+.opacity:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.opacity img {
+  cursor: pointer;
+}
+
+.opacity .caption-item {
+  font-family: Merriweather;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #f9fbfb;
+}
+
+.opacity .content-item {
+  font-family: Raleway;
+  font-size: 16px;
+  color: #f9fbfb;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+
+.opacity .know-more {
+  font-family: Raleway;
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  color: #f7f7f7;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* =============== TEAM =============== */
@@ -438,6 +568,48 @@ img {
 @media screen and (max-width: 900px) {
   .menu {
     padding-top: 2%;
+  }
+
+  .services-item-2 .caption-item {
+    margin: 15% 15% 5%;
+  }
+
+  .services-item-3 .caption-item {
+    margin: 10% 15% 5%;
+  }
+
+  .services-item-4 .caption-item {
+    margin: 15% 15% 5%;
+  }
+
+  .services-item-5 .caption-item {
+    margin: 15% 15% 5%;
+  }
+
+  .services-item-6 .caption-item {
+    margin: 10% 15% 5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .services-item-1 .caption-item {
+    font-size: 16px;
+  }
+
+  .services-item-1 .content-item {
+    font-size: 13px;
+  }
+
+  .opacity .caption-item {
+    font-size: 16px;
+  }
+
+  .opacity .content-item {
+    font-size: 13px;
+  }
+
+  .opacity .know-more {
+    font-size: 16px;
   }
 }
 
