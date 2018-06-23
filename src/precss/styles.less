@@ -240,9 +240,13 @@
 .services-item-1 {
 	.col();
 	.size(7);
+	.size-sm(12);
 	margin-bottom: 15px;
 	background-color:  rgba(109, 246, 235, 0.97);
 	padding: 4% 6%;
+	.to(720px, {
+		padding: 8% 10%;
+	});
 
 	.caption-item {
 		margin-bottom: 20px;
@@ -251,10 +255,13 @@
 		font-weight: 700;
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
-		color: #000000;
-		.to(850px, {
+		color: #000000;				
+		.from-to(720px, 850px {
 			font-size: 16px;
 		});
+		.to(430px, {
+			font-size: 16px;
+		})
 	}
 
 	.content-item {
@@ -263,15 +270,19 @@
 		color: #000000;
 		letter-spacing: 0.8px;
 		line-height: 28px;
-		.to(850px, {
+		.from-to(720px, 850px {
 			font-size: 13px;
 		});
+		.to(430px, {
+			font-size: 13px;
+		})
 	}
 }
 
 .services-item-2 {
 	.col();
 	.size(5);
+	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
 	
@@ -294,8 +305,12 @@
 .services-item-3 {
 	.col();
 	.size(7);
+	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
+	.to(350px, {
+		min-height: 265px;
+	});
 
 	.caption-item {
 		margin: 17% 15% 5%;
@@ -316,6 +331,7 @@
 .services-item-4 {
 	.col();
 	.size(5);
+	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
 
@@ -338,6 +354,7 @@
 .services-item-5 {
 	.col();
 	.size(5);
+	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
 
@@ -360,22 +377,26 @@
 .services-item-6 {
 	.col();
 	.size(7);
+	.size-sm(12);
 	margin-bottom: 15px;
 	position: relative;
+	.to(420px, {
+		min-height: 300px;
+	});
 
 	.caption-item {
 		margin: 17% 15% 5%;
 		.to(900px, {
 			margin: 10% 15% 5%;
-		});
+		});		
 	}
 
 	.content-item {
-		margin: 0 15%;
+		margin: 0 15%;		
 	}
 
 	.know-more {
-		margin: 6% 2% 0 15%;
+		margin: 6% 2% 0 15%;		
 	}
 }
 
@@ -403,9 +424,12 @@
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
 		color: #f9fbfb;
-		.to(850px, {
+		.from-to(720px, 850px {
 			font-size: 16px;
 		});
+		.to(430px, {
+			font-size: 16px;
+		})
 	}	
 	
 	.content-item {
@@ -414,9 +438,12 @@
 		color: #f9fbfb;
 		letter-spacing: 0.8px;
 		line-height: 28px;
-		.to(850px, {
+		.from-to(720px, 850px {
 			font-size: 13px;
 		});
+		.to(430px, {
+			font-size: 13px;
+		})
 	}
 
 	.know-more {
@@ -426,9 +453,12 @@
 		color: #f7f7f7;		
 		display: inline-block;
 		cursor: pointer;
-		.to(850px, {
+		.from-to(720px, 850px {
 			font-size: 16px;
 		});
+		.to(430px, {
+			font-size: 16px;
+		})
 	}
 }	
 
