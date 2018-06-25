@@ -377,10 +377,6 @@ img {
   position: relative;
 }
 
-.services-item-2 .services-img {
-  text-align: center;
-}
-
 .services-item-2 .caption-item {
   margin: 25% 15% 5%;
 }
@@ -391,6 +387,10 @@ img {
 
 .services-item-2 .know-more {
   margin: 9% 3% 0 15%;
+}
+
+.services-img {
+  text-align: center;
 }
 
 .services-item-3 {
