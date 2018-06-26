@@ -578,6 +578,10 @@ img {
   font-size: 15px;
 }
 
+.navigation-dots-says .fa-circle:hover {
+  cursor: pointer;
+}
+
 .says-section-2 {
   flex-grow: 100;
   flex-basis: 380px;
