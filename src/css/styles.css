@@ -526,6 +526,10 @@ img {
   cursor: pointer;
 }
 
+.opacity .know-more:hover {
+  color: #6df6eb;
+}
+
 /* =============== TEAM =============== */
 
 .main-team {
