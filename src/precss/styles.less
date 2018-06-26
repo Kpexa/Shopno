@@ -575,6 +575,127 @@
 
 /* =============== CONTACTS =============== */
 
+.main-contacts {
+	max-width: 100%;
+	background: url("../images/tree1.png") no-repeat center;
+	background-size: cover;
+	height: 570px;
+	.to(955px, {
+		height: 950px;
+	});
+	.to(500px, {
+		height: 850px;
+	});
+	.to(370px, {
+		height: 750px;
+	});		
+	position: relative;		
+
+	.contacts-opacity {
+		position: absolute;
+		max-width: 100%;
+		background-color: rgba(255, 255, 255, 0.7);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}	
+}
+
+.contacts {
+	.flex();
+}
+
+.forms {
+	background-color: rgba(2, 22, 35, 0.7);
+	box-sizing: border-box;	
+	flex-basis: 450px;
+	flex-grow: 100;
+	box-sizing: border-box;
+	padding: 3% 3% 3% 3%;
+	margin: 3% 1%;
+
+	input[type="text"] {
+		display: block;
+		width: 95%;
+		border: none;
+		border-bottom: 1px solid #778289;
+		background-color: rgba(2, 22, 35, 0.01);
+		padding: 10px;
+		outline: none;
+		color: #b3bbc0;
+		
+		&::placeholder {
+			color: #b3bbc0;
+			font-family: Raleway;
+			font-size: 15px;
+		}
+	}
+
+	textarea {
+		display: block;
+		width: 95%;
+		border: none;	
+		border-bottom: 1px solid #778289;
+		resize: none;
+		color: #b3bbc0;
+		background-color: rgba(2, 22, 35, 0.01);
+		font-family: Raleway;
+		font-size: 15px;
+		margin-top: 25px;
+		margin-bottom: 50px;
+		padding: 10px;
+		outline: none;
+	}
+}
+
+.send-massege {
+	background-color: #6eeee4;
+	color: black;
+	border: none;    
+    font-family:'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+  	letter-spacing: 2.16px;
+    text-transform: uppercase;
+    padding: 20px 40px; 
+    cursor: pointer;
+    outline: none; 
+	transition: background-color 0.5s, box-shadow 0.5s;
+	
+	&:hover {
+		background-color: #14BDBD;
+		box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+	}
+}
+
+.address {
+	flex-basis: 450px;
+	box-sizing: border-box;
+	flex-grow: 1;	
+	margin: 3% 1%;
+	background-color: rgba(2, 22, 35, 0.7);
+	padding: 3% 3% 3% 3%;
+	
+	.address-1 {
+		color: #b3bbc0;
+		font-family: Raleway;
+		font-size: 15px;
+		margin-bottom: 35px;
+	}
+
+	.address-2 {
+		color: #b3bbc0;
+		font-family: Raleway;
+		font-size: 15px;
+	}
+}
+
+.map {
+	max-width: 455px;
+	margin-top: 25px;
+}
+
 
 
 /* =============== FOOTER =============== */
