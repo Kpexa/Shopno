@@ -24,13 +24,13 @@ gulp.task('css', function(){
     gulp.src(config.root + config.css.src)
         .pipe(less())
         .pipe(gcmq())
-        // .pipe(autoprefixer({
-        //     browsers: ['>0.1%'],
-        //     cascade: false
-        // }))
-        // .pipe(cleanCSS({
-        //     level: 1
-        // }))
+        .pipe(autoprefixer({
+            browsers: ['>0.1%'],
+            cascade: false
+        }))
+        .pipe(cleanCSS({
+            level: 1
+        }))
         .pipe(gulp.dest(config.root + config.css.dest))
         .pipe(browserSync.reload({
             stream: true
