@@ -490,7 +490,78 @@
 
 /* =============== WHAT THEY SAYS =============== */
 
+.main-says {
+	max-width: 100%;
+	background-color: rgb(249, 251, 251);
+}
 
+.says-items {
+	margin-top: 9%;
+	padding-bottom: 5%;		
+	.flex();
+}
+
+.says-section-1 {	
+	margin-right: 10%;
+	.to(820px, {
+		margin-right: 0;
+	});	
+	text-align: center;
+	flex-grow: 1;	
+}
+
+.navigation-dots-says {
+	margin-top: 30px;
+	color: #d0d0d0;
+	font-size: 15px;
+	.to(730px, {
+		margin-bottom: 30px;
+	});
+}
+
+.says-section-2 {
+	flex-grow: 100;
+	flex-basis: 380px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;	
+	
+	.says-article {		
+		text-align: center;	
+		padding: 10% 10%;
+		background-color: rgb(235, 236, 238);
+	}
+	
+	.caption-article {
+		.caption-article();		
+	}
+
+	.text-article {
+		.text-article();
+	}
+
+	.says-raiting {
+		margin-top: 5%;
+	}
+
+	.says-navigation {
+		align-self: center;
+	}
+
+	.says-navigation-item {		
+		font-size: 30px;
+		padding: 12px 22px 12px 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		margin: 15px;
+		transition: background-color 0.4s, box-shadow 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #71f6eb;
+			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+		}
+	}
+}
 
 /* =============== BRANDS =============== */
 
