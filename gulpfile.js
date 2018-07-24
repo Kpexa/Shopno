@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const less = require('gulp-less');
 const gcmq = require('gulp-group-css-media-queries');
 const smartgrid = require('smart-grid');
+const concat = require('gulp-concat');
 
 const config = {
     root: './src',
@@ -16,7 +17,12 @@ const config = {
     smartgrid: {
         src: './smartgrid.js',
         dest: '/precss'
-    } 
+    },
+    js: {
+        watch: '/prejs/**/*.js',
+        src: '/prejs/**/*.js',
+        dest: '/js'
+    }
 };
 
 gulp.task('css', function(){
@@ -38,9 +44,16 @@ gulp.task('css', function(){
 
 });
 
+gulp.task('js', function(){
+    gulp.src(config.root + config.js.src)
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(config.root + config.js.dest))
+});
+
 gulp.task('watch', ['css', 'browserSync'], function(){
 
     gulp.watch(config.root + config.css.watch, ['css']);
+    gulp.watch(config.root + config.js.watch, ['js']);
     gulp.watch('src/*.html', browserSync.reload);
     gulp.watch(config.smartgrid.src, ['grid']);
 
