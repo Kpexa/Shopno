@@ -26,20 +26,36 @@
 		padding-top: 2%;
 	});
 
-	.logo:hover{
+	.logo:hover {
 		cursor: pointer;		
 	}
 	
-	.burger {
+	.burgerItem {
 		position: fixed;
-		right: 10%;
+		right: 17%;
 		z-index: 100;
 		align-self: center;
 		font-size: 28px;
 		color: rgba(0, 0, 0, 0.6);
 		&:hover{
-			cursor: pointer;
+			cursor: pointer;					
 		}
+	}
+
+	.closeItem {		
+		position: fixed;
+		right: 17%;
+		z-index: 100;
+		align-self: center;
+		font-size: 28px;
+		color: rgba(0, 0, 0, 0.6);
+		&:hover{
+			cursor: pointer;			
+		}
+	}
+	
+	.close {
+		display: none;
 	}
 }
 
@@ -256,7 +272,7 @@
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
 		color: #000000;				
-		.from-to(720px, 850px {
+		.from-to(720px, 850px, {
 			font-size: 16px;
 		});
 		.to(430px, {
@@ -270,7 +286,7 @@
 		color: #000000;
 		letter-spacing: 0.8px;
 		line-height: 28px;
-		.from-to(720px, 850px {
+		.from-to(720px, 850px, {
 			font-size: 13px;
 		});
 		.to(430px, {
@@ -428,7 +444,7 @@
 		letter-spacing: 1.2px;
 		text-transform: uppercase;
 		color: #f9fbfb;
-		.from-to(720px, 850px {
+		.from-to(720px, 850px, {
 			font-size: 16px;
 		});
 		.to(430px, {
@@ -442,7 +458,7 @@
 		color: #f9fbfb;
 		letter-spacing: 0.8px;
 		line-height: 28px;
-		.from-to(720px, 850px {
+		.from-to(720px, 850px, {
 			font-size: 13px;
 		});
 		.to(430px, {
@@ -457,7 +473,7 @@
 		color: #f7f7f7;		
 		display: inline-block;
 		cursor: pointer;				
-		.from-to(720px, 850px {
+		.from-to(720px, 850px, {
 			font-size: 16px;
 		});
 		.to(430px, {
@@ -465,7 +481,7 @@
 		});
 
 		&:hover {
-			color: rgb(109, 246, 235,);
+			color: rgb(109, 246, 235);
 		}
 	}
 }

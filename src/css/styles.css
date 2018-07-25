@@ -137,17 +137,34 @@ img {
   cursor: pointer;
 }
 
-.menu .burger {
+.menu .burgerItem {
   position: fixed;
-  right: 10%;
+  right: 17%;
   z-index: 100;
   align-self: center;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.menu .burger:hover {
+.menu .burgerItem:hover {
   cursor: pointer;
+}
+
+.menu .closeItem {
+  position: fixed;
+  right: 17%;
+  z-index: 100;
+  align-self: center;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu .closeItem:hover {
+  cursor: pointer;
+}
+
+.menu .close {
+  display: none;
 }
 
 .caption-container {
