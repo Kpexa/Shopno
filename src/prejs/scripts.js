@@ -7,7 +7,7 @@ $(function(){
 
   $('.close').on('click', function(){
     $(this).fadeOut(500); 
-    $('.burger').fadeIn(500);
+    $('.burger').fadeIn(500);               
   });
 
-});
+})

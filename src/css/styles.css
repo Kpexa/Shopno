@@ -127,39 +127,71 @@ img {
 }
 
 .menu {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 5%;
+  background-color: #262b2e;
 }
 
-.menu .logo:hover {
+.menu .menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.menu .menu-items li {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.menu .menu-items li:last-child {
+  margin-right: 30px;
+}
+
+.menu .menu-items li .logo {
+  margin-top: 3px;
+}
+
+.menu .menu-items a {
+  text-decoration: none;
+  color: #eff0f2;
+}
+
+.menu .menu-items a:hover {
   cursor: pointer;
+  color: #76f4ea;
 }
 
-.menu .burgerItem {
+.menu .burger-item {
+  margin-top: 11px;
+  margin-left: 5px;
   position: fixed;
-  right: 10%;
+  flex-grow: 1;
   z-index: 100;
   align-self: center;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.menu .burgerItem:hover {
+.menu .burger-item:hover {
   cursor: pointer;
 }
 
-.menu .closeItem {
+.menu .close-item {
+  margin-top: 8px;
+  margin-left: 5px;
   position: fixed;
-  right: 10%;
+  flex-grow: 1;
   z-index: 100;
   align-self: center;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.menu .closeItem:hover {
+.menu .close-item:hover {
   cursor: pointer;
 }
 
@@ -905,10 +937,6 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-  .menu {
-    padding-top: 2%;
-  }
-
   .services-item-2 .caption-item {
     margin: 15% 15% 5%;
   }
