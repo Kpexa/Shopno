@@ -139,7 +139,7 @@ img {
 
 .menu .burgerItem {
   position: fixed;
-  right: 17%;
+  right: 10%;
   z-index: 100;
   align-self: center;
   font-size: 28px;
@@ -152,7 +152,7 @@ img {
 
 .menu .closeItem {
   position: fixed;
-  right: 17%;
+  right: 10%;
   z-index: 100;
   align-self: center;
   font-size: 28px;
