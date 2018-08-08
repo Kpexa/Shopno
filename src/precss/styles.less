@@ -40,7 +40,12 @@
 		.flex();
 		justify-content: space-around;
 		align-items: center;
-		flex-grow: 2;			
+		flex-grow: 2;
+		
+		.active-item {
+			color: rgb(118, 244, 234, 0.5);
+			text-shadow: 2px 2px 4px #000000;
+		}		
 		
 		li {
 			font-family: Montserrat;
@@ -62,12 +67,11 @@
 			transition: color 0.3s, text-shadow 0.3s;
 
 			&:hover {
-				cursor: pointer;
-				color: rgb(118, 244, 234, 0.5);
+				cursor: pointer;				
 				text-shadow: 2px 2px 4px #000000;
 			}
 		}
-	}	
+	}
 
 .caption-container {
 	padding: 150px 15% 0;	

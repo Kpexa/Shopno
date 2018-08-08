@@ -147,6 +147,11 @@ img {
   flex-grow: 2;
 }
 
+.menu-items .active-item {
+  color: #76f4ea;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 .menu-items li {
   font-family: Montserrat;
   font-weight: 500;
@@ -166,7 +171,6 @@ img {
 
 .menu-items a:hover {
   cursor: pointer;
-  color: #76f4ea;
   text-shadow: 2px 2px 4px #000000;
 }
 
