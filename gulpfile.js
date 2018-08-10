@@ -6,6 +6,9 @@ const less = require('gulp-less');
 const gcmq = require('gulp-group-css-media-queries');
 const smartgrid = require('smart-grid');
 const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 
 const config = {
     root: './src',
@@ -30,13 +33,13 @@ gulp.task('css', function(){
     gulp.src(config.root + config.css.src)
         .pipe(less())
         .pipe(gcmq())
-        // .pipe(autoprefixer({
-        //     browsers: ['>0.1%'],
-        //     cascade: false
-        // }))
-        // .pipe(cleanCSS({
-        //     level: 1
-        // }))
+        .pipe(autoprefixer({
+            browsers: ['>0.1%'],
+            cascade: false
+        }))
+        .pipe(cleanCSS({
+            level: 1
+        }))
         .pipe(gulp.dest(config.root + config.css.dest))
         .pipe(browserSync.reload({
             stream: true
@@ -46,11 +49,18 @@ gulp.task('css', function(){
 
 gulp.task('js', function(){
     gulp.src(config.root + config.js.src)
+        .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
+        .pipe(babel({
+			presets: ['env']
+        }))
+        .on('error', console.error.bind(console))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(config.root + config.js.dest))
 });
 
-gulp.task('watch', ['css', 'browserSync'], function(){
+gulp.task('watch', ['js', 'css', 'browserSync'], function(){
 
     gulp.watch(config.root + config.css.watch, ['css']);
     gulp.watch(config.root + config.js.watch, ['js']);

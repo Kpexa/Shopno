@@ -1,7 +1,10 @@
 $(function(){
-
+  
   let links = $('.menu-items a');
   let menu_height = parseInt($('.menu-items').height());
+  let scrollTimer;
+  let btn_up = $('.btn-up');
+  let btn_hide = true;
 
   links.on('click', function(e){
 
@@ -19,8 +22,28 @@ $(function(){
     }
 
   });
+  
+  $(document).on('scroll', function(){
 
-  let scrollTimer;
+    let current_scroll = $(this).scrollTop();
+
+    if(btn_hide && current_scroll >= 400) {
+      btn_up.stop(true).fadeIn(500);
+      btn_hide = false;
+    } else if(!btn_hide && current_scroll < 400) {
+      btn_up.stop(true).fadeOut(500);
+      btn_hide = true;
+    } 
+
+  });
+
+  btn_up.on('click', function(){
+
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+
+  });
 
   $(document).on('scroll', function(){
 
@@ -41,7 +64,7 @@ $(function(){
       let selector = a.attr('href');
       let target = $(selector);
 
-      if((target.offset().top < current_scroll + 400)) {
+      if((target.offset().top < current_scroll + 300)) {
         links.removeClass('active-item');
         $(this).addClass('active-item');
       }

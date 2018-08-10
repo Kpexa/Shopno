@@ -7,6 +7,29 @@
 	.wrapper();
 }
 
+body {
+	position: relative;
+}
+
+.btn-up {	
+	position: fixed;
+	z-index: 500;
+	bottom: 70px;
+	right: 70px;
+	font-size: 30px;
+	color: #14BDBD;
+	transition: color 0.5s, background-color 0.5s;
+	display: none;
+	background-color: #505050;
+	border-radius: 50%;
+	padding: 10px 16px;
+	&:hover {
+		cursor: pointer;				
+		color: #505050;
+		background-color: #14BDBD;
+	}
+}
+
 /* =============== HEADER =============== */
 
 .main-header {	
@@ -78,7 +101,7 @@
 
 	.caption{
 		font-family: Montserrat;
-		color:  #505050;
+		color: #505050;
 		text-transform: uppercase;
 		font-size: 45px;
 		font-weight: 550;
@@ -105,14 +128,15 @@
 .btn {
 	display: flex;
 
-	.contact-us {		
+	.contact-us {	
+		outline: none;	
 		background-color: #eff0f2;
 		color: black;
 		border: 2px solid #7f8081;
 		font-family:'Montserrat';
 		font-weight: 100;
 		font-size: 15px;
-		  letter-spacing: 2.16px;
+		letter-spacing: 2.16px;
 		text-transform: uppercase;
 		padding: 10px 20px; 
 		cursor: pointer;    
