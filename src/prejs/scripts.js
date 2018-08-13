@@ -5,6 +5,8 @@ $(function(){
   let scrollTimer;
   let btn_up = $('.btn-up');
   let btn_hide = true;
+  let menu_btn = $('.nav-tittle');  
+  let menu_items = $('.menu-items li');
 
   links.on('click', function(e){
 
@@ -72,5 +74,19 @@ $(function(){
     });
 
   }
+
+  menu_btn.on('click', function(){
+
+    $(this).toggleClass('active-nav-tittle');
+
+    menu_items.slideToggle(300, function(){
+
+      if($(this).css('display') === 'none') {
+        $(this).removeAttr('style');
+      }
+
+    });
+
+  });
 
 });

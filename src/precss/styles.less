@@ -23,6 +23,19 @@ body {
 	background-color: #505050;
 	border-radius: 50%;
 	padding: 10px 16px;
+	.to(1400px, {
+		bottom: 35px;
+		right: 35px;
+		opacity: 0.5;
+	});
+	.to(800px, {
+		font-size: 20px;
+	});
+	.to(450px, {
+		bottom: 15px;
+		right: 15px;
+	});
+
 	&:hover {
 		cursor: pointer;				
 		color: #505050;
@@ -47,23 +60,56 @@ body {
 	.flex();
 	justify-content: space-between;	
 	background-color: #5f6163;
-		.to(1335px, {
+	.to(1335px, {
 		margin: 0;
 	});
+	.to(670px, {
+		justify-content: center;
+	});	
 	
 	.logo {
 		margin-top: 3px;
-		.to(915px, {
+		.to(935px, {
 			display: none;
 		});
 	}
 }	
+
+	.nav-tittle {				
+		font-family: Montserrat;
+		font-weight: 500;
+		font-size: 18px;
+		margin: 10px;
+		color:rgb(239, 240, 242);
+		transition: color 0.3s, text-shadow 0.3s;		
+		.from(670px, {
+			display: none;
+		});
+		.to(800px, {
+			font-size: 14px;
+		});
+		&:hover {
+			cursor: pointer;				
+			text-shadow: 2px 2px 4px #000000;
+		}				
+	}
+
+	.active-nav-tittle {
+		color:  rgb(118, 244, 234, 0.5);
+	}
 
 	.menu-items {		
 		.flex();
 		justify-content: space-around;
 		align-items: center;
 		flex-grow: 2;
+		.to(670px, {			
+			background-color: #5f6163;
+			display: inline-block;			
+			width: 100%;
+			position: absolute;
+			top: 30px;			
+		});	
 		
 		.active-item {
 			color: rgb(118, 244, 234, 0.5);
@@ -75,18 +121,25 @@ body {
 			font-weight: 500;
 			font-size: 18px;
 			margin: 10px;
-			.to(800px, {
+			.to(820px, {
 				font-size: 14px;
+			});
+			.to(670px, {
+				display: none;
+				text-align: center;
 			});				
 
 			&:last-child {
 				margin-right: 30px;
-			}			
+				.to(670px, {
+					margin: 10px;
+				});
+			}							
 		}
 
 		a {
 			text-decoration: none;
-			color:rgb(239, 240, 242);
+			color: rgb(239, 240, 242);
 			transition: color 0.3s, text-shadow 0.3s;
 
 			&:hover {
