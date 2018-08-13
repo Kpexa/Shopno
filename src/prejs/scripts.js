@@ -7,6 +7,7 @@ $(function(){
   let btn_hide = true;
   let menu_btn = $('.nav-tittle');  
   let menu_items = $('.menu-items li');
+  let btn_contact_us = $('.contact-us');
 
   links.on('click', function(e){
 
@@ -20,7 +21,7 @@ $(function(){
     if(target.length > 0) {
       $('html, body').animate({
         scrollTop: target.offset().top - menu_height
-      }, 500);
+      }, 700);
     }
 
   });
@@ -43,7 +44,7 @@ $(function(){
 
     $('html, body').animate({
       scrollTop: 0
-    }, 500);
+    }, 700);
 
   });
 
@@ -88,5 +89,13 @@ $(function(){
     });
 
   });
+
+  btn_contact_us.on('click', function(){    
+
+    $('html, body').animate({
+      scrollTop: $('#contacts').offset().top
+    }, 700);
+
+  });  
 
 });
