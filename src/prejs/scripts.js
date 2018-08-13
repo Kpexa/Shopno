@@ -93,7 +93,7 @@ $(function(){
   btn_contact_us.on('click', function(){    
 
     $('html, body').animate({
-      scrollTop: $('#contacts').offset().top + 350
+      scrollTop: $('#contacts').offset().top + 550
     }, 700);
 
   });  
