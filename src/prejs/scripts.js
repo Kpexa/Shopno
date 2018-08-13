@@ -41,10 +41,12 @@ $(function(){
   });
 
   btn_up.on('click', function(){
-
+    
     $('html, body').animate({
       scrollTop: 0
-    }, 700);
+    }, 700); 
+    
+    links.removeClass('active-item');
 
   });
 
