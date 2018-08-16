@@ -150,7 +150,16 @@ body {
 	}
 
 .caption-container {
-	padding: 150px 15% 0;	
+	padding: 250px 15% 0;	
+	.to(900px, {
+		padding: 200px 15% 0;
+	});
+	.to(576px, {
+		padding: 150px 15% 0;
+	});
+	.to(420px, {
+		padding: 100px 15% 0;
+	});	
 
 	.caption{
 		font-family: Montserrat;
@@ -194,9 +203,9 @@ body {
 		padding: 10px 20px; 
 		cursor: pointer;    
 		transition: box-shadow 0.5s, background-color 1s;
-		margin: 8% auto 10%;		
+		margin: 10% auto 15%;		
 		.to(720px, {
-			margin: 15% auto 10%;
+			margin: 12% auto 10%;
 		});
 		.to(576px, {
 			font-size: 10px; 
