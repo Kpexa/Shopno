@@ -1,5 +1,6 @@
 $(function(){
   
+  // HEADER
   let links = $('.menu-items a');
   let menu_height = parseInt($('.menu-items').height());
   let scrollTimer;
@@ -7,8 +8,8 @@ $(function(){
   let btn_hide = true;
   let menu_btn = $('.nav-tittle');  
   let menu_items = $('.menu-items li');
-  let btn_contact_us = $('.contact-us');
-
+  let btn_contact_us = $('.contact-us');     
+           
   links.on('click', function(e){
 
     e.preventDefault();
@@ -99,5 +100,5 @@ $(function(){
     }, 700);
 
   });  
-    
+  
 });
