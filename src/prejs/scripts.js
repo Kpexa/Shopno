@@ -113,11 +113,13 @@ $(function(){
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true,
+            loop:false
         },
         600:{
             items:1,
-            nav:true
+            nav:true,
+            loop:false
         },
         1000:{
             items:1,
