@@ -99,6 +99,32 @@ $(function(){
       scrollTop: $('#contacts').offset().top + 550
     }, 700);
 
-  });  
+  });
+  
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,    
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:true
+        }
+    }    
+  });
   
 });
