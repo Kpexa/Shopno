@@ -114,12 +114,12 @@ $(function(){
         0:{
             items:1,
             nav:true,
-            loop:false
+            autoplay: false            
         },
         600:{
             items:1,
             nav:true,
-            loop:false
+            autoplay: false            
         },
         1000:{
             items:1,
